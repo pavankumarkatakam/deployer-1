@@ -18,7 +18,6 @@ use REBELinBLUE\Deployer\Repositories\Contracts\SharedFileRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\TemplateRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\UserRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\VariableRepositoryInterface;
-use REBELinBLUE\Deployer\Repositories\Contracts\KeyRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\EloquentCheckUrlRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentCommandRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentDeploymentRepository;
@@ -34,7 +33,6 @@ use REBELinBLUE\Deployer\Repositories\EloquentSharedFileRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentTemplateRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentUserRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentVariableRepository;
-use REBELinBLUE\Deployer\Repositories\EloquentKeyRepository;
 
 /**
  * The repository service provider, binds interfaces to concrete classes for dependency injection.

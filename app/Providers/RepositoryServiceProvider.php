@@ -8,6 +8,7 @@ use REBELinBLUE\Deployer\Repositories\Contracts\CommandRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\DeploymentRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\GroupRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\HeartbeatRepositoryInterface;
+use REBELinBLUE\Deployer\Repositories\Contracts\KeyRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\NotificationRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\NotifyEmailRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\ProjectFileRepositoryInterface;
@@ -17,11 +18,13 @@ use REBELinBLUE\Deployer\Repositories\Contracts\SharedFileRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\TemplateRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\UserRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\Contracts\VariableRepositoryInterface;
+use REBELinBLUE\Deployer\Repositories\Contracts\KeyRepositoryInterface;
 use REBELinBLUE\Deployer\Repositories\EloquentCheckUrlRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentCommandRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentDeploymentRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentGroupRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentHeartbeatRepository;
+use REBELinBLUE\Deployer\Repositories\EloquentKeyRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentNotificationRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentNotifyEmailRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentProjectFileRepository;
@@ -31,6 +34,7 @@ use REBELinBLUE\Deployer\Repositories\EloquentSharedFileRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentTemplateRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentUserRepository;
 use REBELinBLUE\Deployer\Repositories\EloquentVariableRepository;
+use REBELinBLUE\Deployer\Repositories\EloquentKeyRepository;
 
 /**
  * The repository service provider, binds interfaces to concrete classes for dependency injection.
@@ -44,6 +48,7 @@ class RepositoryServiceProvider extends ServiceProvider
         DeploymentRepositoryInterface::class   => EloquentDeploymentRepository::class,
         GroupRepositoryInterface::class        => EloquentGroupRepository::class,
         HeartbeatRepositoryInterface::class    => EloquentHeartbeatRepository::class,
+        KeyRepositoryInterface::class          => EloquentKeyRepository::class,
         NotificationRepositoryInterface::class => EloquentNotificationRepository::class,
         NotifyEmailRepositoryInterface::class  => EloquentNotifyEmailRepository::class,
         ProjectRepositoryInterface::class      => EloquentProjectRepository::class,
